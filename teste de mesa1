@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace teste_de_mesa_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+            Console.WriteLine("Valor de A: {0} ", a);
+            int b = 20;
+            Console.WriteLine("Valor de B: {0}", b);
+            int c = (a + b) / 2;
+            Console.WriteLine("Valor de c: {0}", c);
+            c = c - 40;
+            Console.WriteLine("Valor de c após c - 40: {0}", c);
+            int[] numeros = new int[100];
+            numeros[3] = a + b + c;
+            Console.WriteLine("Valor de vetor[3]: {0}", numeros[3]);
+
+            Console.ReadLine();
+        }
+    }
+}
