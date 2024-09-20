@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace teste_de_mesa2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var a = 2;
+            bool b = false;
+            bool c = true;
+            if (a < 6) 
+            {
+                 a = a + 1;
+                Console.WriteLine(a);
+                Console.WriteLine(b);
+
+            }
+
+            if (a < 6) 
+            {
+                a = a + 1;
+                Console.WriteLine(a);
+                Console.WriteLine(b);
+            }
+
+            if (a < 6) 
+            {
+                a = a + 1;
+                Console.WriteLine(a);
+                Console.WriteLine(b);
+            }
+
+            if (a < 6) 
+            {
+                a = a + 1;
+                Console.WriteLine(a);
+                Console.WriteLine(c);
+            }
+            else {
+                Console.WriteLine(a);
+                Console.WriteLine(c);
+            }
+                        
+            Console.ReadLine();
+        }
+    }
+}
