@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace teste_de_mesa_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var a = 7;
+            var b = a - 6;
+            var vetorb = b + a;
+            if (b<a)
+            {
+                b = b + 2; 
+                Console.WriteLine($"o valor de B é {b}");
+                Console.WriteLine($"o valor do vetor de B é {vetorb}, V \n");               
+            }
+            if (b < a)
+            {
+                b = b + 2;
+                vetorb = b + a;
+                Console.WriteLine($"o valor de B é {b}");
+                Console.WriteLine($"o valor do vetor de B é {10}, V \n ");
+            }
+            if (b < a)
+            {
+                b = b + 2;
+                vetorb = b + a;
+                Console.WriteLine($"o valor de B é {b}");
+                Console.WriteLine($"o valor do vetor de B é {12}, V\n ");
+            
+            }
+            {
+                b = b + 2;
+                vetorb = b + a;
+                Console.WriteLine($"o valor de B é {"nulo"}");
+                Console.WriteLine($"o valor do vetor de B é {"nulo"}, F\n ");
+
+            }
+            Console.ReadLine();
+        }
+    }
+}
